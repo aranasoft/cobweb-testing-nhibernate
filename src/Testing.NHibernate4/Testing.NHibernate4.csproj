@@ -10,6 +10,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Include="..\Testing.NHibernate3\Dialect\FluentMigratorSQLiteDialect.cs" Link="Dialect\FluentMigratorSQLiteDialect.cs" />
+      <Compile Include="..\Testing.NHibernate3\Fetching\FakeFetchingProvider.cs" Link="Fetching\FakeFetchingProvider.cs" />
+      <Compile Include="..\Testing.NHibernate3\FluentMigratorSQLiteConnectionConfiguration.cs" Link="FluentMigratorSQLiteConnectionConfiguration.cs" />
+      <Compile Include="..\Testing.NHibernate3\SQLiteConnectionConfiguration.cs" Link="SQLiteConnectionConfiguration.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Cobweb" Version="[1.1.1,2)" />
         <PackageReference Include="Cobweb.Data.NHibernate" Version="[1.40.2,1.50)" />
         <PackageReference Include="FluentNHibernate" Version="[2,2.1)" />

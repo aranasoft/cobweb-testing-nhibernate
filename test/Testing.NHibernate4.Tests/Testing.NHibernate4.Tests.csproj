@@ -30,8 +30,4 @@
         <ProjectReference Include="..\..\src\Testing.NHibernate4\Testing.NHibernate4.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Entities\" />
-    </ItemGroup>
-
 </Project>
