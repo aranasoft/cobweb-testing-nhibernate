@@ -17,11 +17,6 @@
 # 1.40.0 (2015-01-17)
 
 
-### Bug Fixes
-
-* **fetch:** support ThenFetch / ThenFetchMany on Eager Load in Testing ([5856568](https://github.com/aranasoft/cobweb/commit/5856568))
-
-
 ### Features
 
 * **nhibernate:** add support for NHibernate v4 ([f73cabd](https://github.com/aranasoft/cobweb/commit/f73cabd))
