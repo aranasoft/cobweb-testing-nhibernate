@@ -1,3 +1,14 @@
+<a name="1.40.2"></a>
+## [1.40.2](https://github.com/aranasoft/cobweb-testing-nhibernate/compare/v1.40.1...v1.40.2) (2018-06-17)
+
+
+### Bug Fixes
+
+* **fetch:** resolve invalid cast exception on ThenMany within FakeFetchingProvider ([05d7955](https://github.com/aranasoft/cobweb-testing-nhibernate/commit/05d7955))
+* **fetch:** support ThenFetch / ThenFetchMany on Eager Load in Testing for NHibernate v3 ([ddb411d](https://github.com/aranasoft/cobweb-testing-nhibernate/commit/ddb411d))
+
+
+
 <a name="1.40.1"></a>
 ## 1.40.1 (2017-07-20)
 
