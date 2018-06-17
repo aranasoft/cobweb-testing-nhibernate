@@ -1,3 +1,13 @@
+<a name="1.50.1"></a>
+## [1.50.1](https://github.com/aranasoft/cobweb-testing-nhibernate/compare/v1.40.2...v1.50.1) (2018-06-17)
+
+
+### Features
+
+* **nhibernate:** add support for NHibernate v5 ([19d7ebf](https://github.com/aranasoft/cobweb-testing-nhibernate/commit/19d7ebf))
+
+
+
 <a name="1.40.2"></a>
 ## [1.40.2](https://github.com/aranasoft/cobweb-testing-nhibernate/compare/v1.40.1...v1.40.2) (2018-06-17)
 
