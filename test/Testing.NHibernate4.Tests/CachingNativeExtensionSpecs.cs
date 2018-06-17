@@ -1,6 +1,4 @@
 ﻿using System;
-using System;
-using System.Linq;
 using System.Linq;
 using Cobweb.Testing.NHibernate.Tests.Entities;
 using FluentAssertions;
