@@ -1,16 +1,18 @@
 ﻿using System;
+using System;
 using System.Linq;
-using Cobweb.Data.NHibernate.Tests.Entities;
+using System.Linq;
+using Cobweb.Testing.NHibernate.Tests.Entities;
 using FluentAssertions;
 using NHibernate.Linq;
 using Xunit;
 
 namespace Cobweb.Testing.NHibernate.Tests {
     [Collection("CachingProvider")]
-    public class CacheableSpecs {
+    public class CachingNativeExtensionSpecs {
         [Fact]
         public void ItShouldThrowOnCacheableWithDirectCacheableCall() {
-            Action act = () => LinqExtensionMethods.Cacheable(Enumerable.Empty<RootEntity>().AsQueryable()).FirstOrDefault();
+            Action act = () => LinqExtensionMethods.Cacheable(Enumerable.Empty<PersonEntity>().AsQueryable()).FirstOrDefault();
 
             act.Should()
                .Throw<InvalidOperationException>()

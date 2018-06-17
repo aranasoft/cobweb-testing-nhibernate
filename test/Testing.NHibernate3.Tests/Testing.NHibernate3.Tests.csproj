@@ -22,4 +22,8 @@
         <ProjectReference Include="..\..\src\Testing.NHibernate3\Testing.NHibernate3.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Entities\" />
+    </ItemGroup>
+
 </Project>

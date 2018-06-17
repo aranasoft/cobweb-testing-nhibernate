@@ -19,7 +19,6 @@
     <ItemGroup>
         <PackageReference Include="Cobweb" Version="[1.1.1,2)" />
         <PackageReference Include="Cobweb.Data.NHibernate" Version="[1.40.2,1.50)" />
-        <PackageReference Include="FluentNHibernate" Version="[2,2.1)" />
     </ItemGroup>
 
 </Project>

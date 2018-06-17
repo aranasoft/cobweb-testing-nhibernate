@@ -1,16 +1,22 @@
 ﻿using System;
 using System.Linq;
+using Cobweb.Data.NHibernate.Caching;
 using Cobweb.Data.NHibernate.Providers;
-using Cobweb.Data.NHibernate.Tests.Entities;
+using Cobweb.Testing.NHibernate.Tests.Entities;
 using FluentAssertions;
 using Xunit;
 
 namespace Cobweb.Testing.NHibernate.Tests {
     [Collection("CachingProvider")]
-    public class CachingProviderSpecs {
+    public class CachingDefaultProviderSpecs {
+        [Fact]
+        public void ItShouldUseTheDefaultCachingProviderWhenSet() {
+            CachingProvider.Current().Should().BeOfType<NHibernateCachingProvider>();
+        }
+
         [Fact]
         public void ItShouldThrowOnCacheableWithCachingProviderCall() {
-            Action act = () => CachingProvider.Cacheable(Enumerable.Empty<RootEntity>().AsQueryable()).FirstOrDefault();
+            Action act = () => CachingProvider.Cacheable(Enumerable.Empty<PersonEntity>().AsQueryable()).FirstOrDefault();
 
             act.Should()
                .Throw<InvalidOperationException>()

@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
-using Cobweb.Data.NHibernate.Providers;
-using Cobweb.Data.NHibernate.Tests.Entities;
+using Cobweb.Testing.NHibernate.Tests.Entities;
 using FluentAssertions;
+using NHibernate.Linq;
 using Xunit;
 
 namespace Cobweb.Testing.NHibernate.Tests {
     [Collection("FetchingProvider")]
-    public class FetchingProviderSpecs {
+    public class FetchingNativeExtensionSpecs {
         [Fact]
-        public void ItShouldThrowOnFetchWithFetchingProviderCall() {
-            Action act = () => EagerFetch.Fetch(Enumerable.Empty<RootEntity>().AsQueryable(), root => root.Child).FirstOrDefault();
+        public void ItShouldThrowOnFetchWithDirectFetchCall() {
+            Action act = () => EagerFetchingExtensionMethods.Fetch(Enumerable.Empty<PersonEntity>().AsQueryable(), root => root.Employer).FirstOrDefault();
 
             act.Should()
                .Throw<InvalidOperationException>()
@@ -19,8 +19,8 @@ namespace Cobweb.Testing.NHibernate.Tests {
         }
 
         [Fact]
-        public void ItShouldThrowOnFetchManyWithFetchingProviderCall() {
-            Action act = () => EagerFetch.FetchMany(Enumerable.Empty<RootEntity>().AsQueryable(), root => root.Children).FirstOrDefault();
+        public void ItShouldThrowOnFetchManyWithDirectFetchCall() {
+            Action act = () => EagerFetchingExtensionMethods.FetchMany(Enumerable.Empty<PersonEntity>().AsQueryable(), root => root.Cars).FirstOrDefault();
 
             act.Should()
                .Throw<InvalidOperationException>()

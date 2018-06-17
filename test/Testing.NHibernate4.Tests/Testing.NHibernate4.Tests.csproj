@@ -8,12 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Include="..\Testing.NHibernate3.Tests\Entities\ChildEntity.cs" Link="Entities\ChildEntity.cs" />
-      <Compile Include="..\Testing.NHibernate3.Tests\Entities\GrandchildEntity.cs" Link="Entities\GrandchildEntity.cs" />
-      <Compile Include="..\Testing.NHibernate3.Tests\Entities\RootEntity.cs" Link="Entities\RootEntity.cs" />
-      <Compile Include="..\Testing.NHibernate3.Tests\FakeFetchingProviderSpecs.cs" Link="FakeFetchingProviderSpecs.cs" />
-      <Compile Include="..\Testing.NHibernate3.Tests\FetchingProviderSpecs.cs" Link="FetchingProviderSpecs.cs" />
-      <Compile Include="..\Testing.NHibernate3.Tests\FetchSpecs.cs" Link="FetchSpecs.cs" />
+      <Compile Include="..\Testing.NHibernate3.Tests\FetchingDefaultProviderSpecs.cs" Link="FetchingDefaultProviderSpecs.cs" />
+      <Compile Include="..\Testing.NHibernate3.Tests\FetchingFakeProviderSpecs.cs" Link="FetchingFakeProviderSpecs.cs" />
+      <Compile Include="..\Testing.NHibernate3.Tests\FetchingNativeExtensionSpecs.cs" Link="FetchingNativeExtensionSpecs.cs" />
     </ItemGroup>
 
     <ItemGroup>
